@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <div className="initialcontainer">
-        <Header title='Titulo de Cabecera'></Header>
+        <Header title='Titulo de Cabecera Modif'></Header>
         <Body title='Este es el cuerpo del contenedor principal'></Body>
         <Footer title='Titulo de Pie'></Footer>
       </div>
