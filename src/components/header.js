@@ -1,16 +1,14 @@
-//import react from 'react';
-import { Link } from "react-router-dom";
-// import Tareas from './tareas'
-
+import DrawerAppBar from './menu'
 
 function Header(props) {
     
     return (
         <div className="header">
             {props.title}
-            <div id="sidebar">
-                {/* other elements */}
 
+            <DrawerAppBar />
+
+            {/* <div id="sidebar">
                 <nav>
                 <ul>
                     <li>
@@ -21,9 +19,7 @@ function Header(props) {
                     </li>
                 </ul>
                 </nav>
-
-                {/* other elements */}
-            </div>
+            </div> */}
             
         </div>
     )
