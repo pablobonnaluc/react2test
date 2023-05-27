@@ -17,7 +17,7 @@ import { useNavigate  } from "react-router-dom";
 
 
 const drawerWidth = 240;
-const navItems = ['tareas','Home', 'About', 'Contact'];
+const navItems = ['tareas','Home', 'About', 'contacts'];
 
 export default function DrawerAppBar(props) {
   const navigate = useNavigate();
