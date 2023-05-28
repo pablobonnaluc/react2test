@@ -1,15 +1,15 @@
 
 
 .initialcontainer {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
     height: 100%;
 }
 
 .initialcontainer .header {
-    min-height: 20vh;   
+    min-height: 80vh;   
     width: 100%;
     background-color: black;
     color: white;
@@ -18,7 +18,7 @@
 .initialcontainer .body {
     min-height: 70vh;   
     width: 100%;
-    background-color: aquamarine;
+    background-color: gray;
 }
 
 .initialcontainer .footer {
@@ -32,6 +32,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
 }
 
 /* input tarea*/
@@ -53,10 +54,11 @@
 }
 
 .buttonaddtask {
-    background-color: yellow;
+    background-color: blue;
     height: 40px;
     width: 40%;
     padding: 3px;
+    border-radius: 8px;
 }
 
 .buttonaddtask:hover {
@@ -93,4 +95,15 @@
 
 .routelink {
     color: white;
+}
+
+
+.usercontainer {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+.cardmediaimg {
+    width: auto!important;
+    height: auto!important;
 }

@@ -1,6 +1,6 @@
 import { AiFillDelete } from 'react-icons/ai';
 
-function Tarea(props) {
+function Task(props) {
 
     return (
         <div className='tareacontenedor'>
@@ -15,4 +15,4 @@ function Tarea(props) {
     
 }
 
-export default Tarea;
+export default Task;

@@ -1,12 +1,12 @@
 
 import {useState} from 'react'
-import Tarea from './tarea';
+import Task from './task';
 import { v4 as uuidv4} from 'uuid';
 
 import Badge from '@mui/material/Badge';
 import MailIcon from '@mui/icons-material/Mail';
 
-function Tareas() {
+function Tasks() {
 
     const [inputtaskvalue, setInputtaskvalue] = useState('');
     const [tareas , setTareas] = useState([]);
@@ -61,13 +61,13 @@ function Tareas() {
                 <div className='listatareas'>
                 {
                     tareas.map( (tarea) =>
-                            <Tarea 
+                            <Task 
                                 id={tarea.id}
                                 key={tarea.id} 
                                 description={tarea.description}
                                 deleteTask={deleteTask}
                                 >
-                            </Tarea>
+                            </Task>
                         
                     )
                 }
@@ -77,4 +77,4 @@ function Tareas() {
     )
 }
 
-export default Tareas;
+export default Tasks;

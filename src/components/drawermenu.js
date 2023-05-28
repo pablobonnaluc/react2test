@@ -13,38 +13,29 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { useNavigate  } from "react-router-dom";
-
 
 const drawerWidth = 240;
-const navItems = ['tareas','Home', 'About', 'contacts'];
+const navItems = ['Home', 'About', 'Contact'];
 
-export default function DrawerAppBar(props) {
-  const navigate = useNavigate();
-
+export default function DrawerAppBar2(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
-    //setMobileOpen((prevState) => !prevState);
-    setMobileOpen(true);
+    setMobileOpen((prevState) => !prevState);
   };
-
-  const navToItem = (e) => {
-      navigate(`/${e.target.textContent}`);      
-  }
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        PMB Test
+        MUI
       </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} onClick={navToItem} />
+              <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -73,7 +64,7 @@ export default function DrawerAppBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            PMB Test
+            MUI
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
@@ -101,7 +92,10 @@ export default function DrawerAppBar(props) {
           {drawer}
         </Drawer>
       </Box>
-      
+      <Box component="main" sx={{ p: 3 }}>
+        <Toolbar />
+        
+      </Box>
     </Box>
   );
 }

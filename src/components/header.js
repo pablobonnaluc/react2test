@@ -1,12 +1,20 @@
-import DrawerAppBar from './menu'
+ import DrawerAppBar from './menu'
+ import MiniDrawer from './minivariandrawer'
+ 
+//import DrawerAppBar2 from './drawermenu'
 
 function Header(props) {
     
     return (
+        
         <div className="header">
             {props.title}
 
-            <DrawerAppBar />
+            {/* <DrawerAppBar /> */}
+
+            {/* <DrawerAppBar2 /> */}
+            {/* <MiniDrawer /> */}
+            
 
             {/* <div id="sidebar">
                 <nav>
